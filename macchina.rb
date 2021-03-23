@@ -13,9 +13,7 @@ class Macchina < Formula
   depends_on "rust" => :build
 
   def install
-    cd "macchina" do
-      system "cargo", "install", *std_cargo_args
-    end
+    system "cargo", "install", *std_cargo_args
   end
 
   test do
